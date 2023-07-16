@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Тестовая страница</title>
+  <title>Interactive Animation Test</title>
+  <style>
+    /* Add your animation CSS here */
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-30px);
+      }
+    }
+
+    .animated-element {
+      width: 50px;
+      height: 50px;
+      background-color: blue;
+      position: relative;
+      animation: bounce 2s infinite;
+    }
+  </style>
 </head>
 <body>
-    <h1>Привет, мир!</h1>
-    <p>Это тестовая страница.</p>
-    </body>
+  <div class="animated-element"></div>
+</body>
 </html>
